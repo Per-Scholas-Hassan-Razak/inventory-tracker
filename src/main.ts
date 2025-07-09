@@ -12,5 +12,12 @@ const products: Product[] = [iPhone, netflixSubscription];
 products.forEach(product => {
   console.log(product.displayDetails());
   console.log(`Final Price: $${product.getPriceWithTax().toFixed(2)}`);
+    if (product instanceof PhysicalProduct) {
+    console.log(`Weight: ${product.physicalProductWeight}`); 
+  } else if (product instanceof DigitalProduct) {
+    console.log(`File Size: ${product.digitalProductFileSize}`);  
+  }
+
+  console.log("---");
 });
 

@@ -18,4 +18,4 @@ class DigitalProduct extends Product {
   }
 }
 
-export default PhysicalProduct
+export default DigitalProduct
