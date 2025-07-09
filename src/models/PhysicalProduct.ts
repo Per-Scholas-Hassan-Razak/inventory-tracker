@@ -1,3 +1,5 @@
+import Product from "./Product";
+
 class PhysicalProduct extends Product{
     public weight:number;
 
@@ -14,3 +16,5 @@ class PhysicalProduct extends Product{
        return `${this.weight} kg`;     
     }
 }
+
+export default PhysicalProduct;

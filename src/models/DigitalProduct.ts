@@ -1,3 +1,6 @@
+import PhysicalProduct from "./PhysicalProduct";
+import Product from "./Product";
+
 class DigitalProduct extends Product {
   public fileSize: number;
 
@@ -14,3 +17,5 @@ class DigitalProduct extends Product {
     return `${this.fileSize} MB`;
   }
 }
+
+export default PhysicalProduct
